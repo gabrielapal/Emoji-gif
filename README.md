@@ -1,6 +1,6 @@
 # Emoji Art
 
-Learning Python development using Trinket.
+An introduction to Python development using Trinket.
 
 Built a face emoji that changes expressions when any key is pressed. 
 
