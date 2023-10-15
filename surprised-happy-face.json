@@ -1,0 +1,58 @@
+from processing import *
+
+def setup():
+  size(300,300)
+  
+def draw():
+  background(255,204,229)
+  
+  # yellow circle
+  fill(255,255,204) 
+  ellipse(150,150,200,200) 
+  
+  if keyPressed:
+    # right eye
+    fill(255,255,255)
+    ellipse(190,145,40,40)
+    
+    # right pupil
+    fill(51,0,0)
+    ellipse(190,145,12,12) 
+    
+    # left eye
+    fill(255,255,255)
+    ellipse(110,145,40,40)
+    
+    # left pupil
+    fill(51,0,0) 
+    ellipse(110,145,12,12)
+    
+    # mouth
+    fill(0,0,0)
+    arc(150,200,90,50,radians(0),radians(180)) # semi-circle
+    
+  else:
+    # right eye
+    fill(255,255,255)
+    ellipse(190,145,40,40)
+    
+    # right pupil
+    fill(51,0,0)
+    ellipse(200,140,12,12)
+    
+    # left eye
+    fill(255,255,255)
+    ellipse(110,145,40,40)
+
+    # left pupil
+    fill(51,0,0)
+    ellipse (120,140,12,12)
+
+    # mouth rounded
+    fill(0,0,0)
+    ellipse(150,213,30,30)
+
+  text(str((mouseX, mouseY)), mouseX, mouseY)
+  
+  
+run()
